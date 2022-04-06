@@ -1,6 +1,6 @@
 
 
-from random import randint
+from random import randint, random
 
 class Store:
     def __init__(self,hour:int,minute:int,line:list) -> None:
@@ -19,19 +19,29 @@ class Store:
         
     def Add_To_Line(self,n):
 
-        self.line.append(Person(f"Person {n}",1))
+        self.line.append(
+        Person(f"Person {n}",Task()))
         if self.minute<10 and self.hour<10:
-               print(f"{self.line[-1].name} arrived at the time 0{self.hour}:0{self.minute}")
+               print(f"{self.line[-1].name} arrived at the time 0{self.hour}:0{self.minute} with {self.line[-1].tasks} tasks")
         elif self.hour<10: 
-                print(f"{self.line[-1].name} arrived at the time 0{self.hour}:{self.minute}")
+                print(f"{self.line[-1].name} arrived at the time 0{self.hour}:{self.minute} with {self.line[-1].tasks} tasks")
         elif self.minute<10:
-               print(f"{self.line[-1].name} arrived at the time {self.hour}:0{self.minute}") 
+               print(f"{self.line[-1].name} arrived at the time {self.hour}:0{self.minute} with {self.line[-1].tasks} tasks") 
         else:
-                print(f"{self.line[-1].name} arrived at the time {self.hour}:{self.minute}")
+                print(f"{self.line[-1].name} arrived at the time {self.hour}:{self.minute} with {self.line[-1].tasks} tasks")
 class Person:
     def __init__(self,name:str,tasks:int) -> None:
         self.name=name
-        self.task=tasks
+        self.tasks=tasks
+
+
+def Task():
+    n=1
+    rand=random()
+    while rand<1/2**n:
+        n+=1
+    return n
+    
 
 
 
