@@ -59,7 +59,7 @@ def main():
             n+=1
             store1.Add_To_Line(n)
             
-    print(len(store1.line))
+
 
         
 
