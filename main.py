@@ -9,10 +9,13 @@ class Store:
         self.line=line
 
     def New_Time(self):
+        # The time counter
         self.minute+=1
         if self.minute%60==0:
             self.hour+=1
             self.minute=0
+
+            
 
     # Tells whenever a new peroson has entered the queue, the time they entered queue and how many tasks they need help with
     def Add_To_Line(self,n):
@@ -40,11 +43,6 @@ def Task():
         n+=1
     return n
     
-def Help(storelist):
-    h=storelist.line[0].tasks
-    while h>0:
-        h-=0.5
-        print(h)
 
 
 
@@ -52,6 +50,7 @@ def Help(storelist):
 
 
 def main():
+    h=0
     n=0
     store1=Store(9,0,[])
     while store1.hour<18:
@@ -60,9 +59,16 @@ def main():
             n+=1
             store1.Add_To_Line(n)
 
-        # if len(store1.line)>0:
-        #     Help(store1)
-        #     del store1.line[0]
+        if h==0 and len(store1.line)>0:
+            h=store1.line[0].tasks
+            del store1.line[0]
+            h-=0.5
+
+        else:
+            h-=0.5
+
+
+
 
 
         
