@@ -1,7 +1,5 @@
 from random import randint, choice
 
-
-
 class Store:
     def __init__(self,hour:int,minute:int,line:list,help:bool):
         """_summary_
@@ -68,16 +66,20 @@ class Store:
 
 class Person:
     # Which custumer in the queue, their amount of tasks, and the time they have waited
-    def __init__(self,name:str,tasks:int,waited:int) -> None:
+
+    def __init__(self,name:str,tasks:int) -> None:
+        """_summary_
+
+        Args:
+            name (str): Name of each person
+            tasks (int): How many tasks each person has 
+        """
         self.name=name
         self.tasks=tasks
-        self.waited=waited
-
-
 
 def Task():
     """_summary_
-
+        Randomized number between or equal to 3 and 1
     Returns:
         (Int): A randomized amount of tasks for each person
     """
