@@ -2,7 +2,7 @@
 
 ## Description
 
-A simulator for queing in a store and will give statistics in the end
+A simulator simulating how a could work, how much time the total what would be
 
 ## Technology/languages
 
@@ -16,6 +16,10 @@ A simulator for queing in a store and will give statistics in the end
 
 ## Installation
 
+* clone the reposition: git clone "https://github.com/Pontus1337/quesimulator"
+
+* Make python installation "https://www.python.org/downloads/" and follow the steps on the website
+
 ## Code convention
 
     CamelCase
@@ -28,8 +32,30 @@ A simulator for queing in a store and will give statistics in the end
 
 ## To do
 
+* [x] Make a functional simulator
+* [] Graphical user interface
+* [] Mechanics where the store gets robbed
+
 ## Contribrution
 
-## Liscence
+    No contribrutions allowed
+
+## Licence
+
+MIT
 
 ## Contact
+
+## Changelogg
+
+### Version 1.0
+
+#### Added
+
+* Store class
+* Time function
+* Function for putting people into the queue
+* Person class
+* Randomize task function
+***
+### Version 1.1
