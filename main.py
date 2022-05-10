@@ -56,7 +56,7 @@ class Store:
             elif self.line[0].tasks==0:
                 if len(self.line)>1:
                     print(f"{self.line[0].name} walked out at {self.hour}:{self.minute} and {self.line[1].name} starts getting help")
-
+                    
                 else:
                     print(f"{self.line[0].name} walked out at {self.hour}:{self.minute}")
                     self.help=False
