@@ -34,6 +34,14 @@ A simulator simulating how a could work, how much time the total what would be
 
 ## Example
 
+* How it looks in the console
+
+<img width="424" alt="image" src="https://user-images.githubusercontent.com/94127890/167810087-35f06249-c658-488f-ba7c-7860b928013c.png">
+
+* The saved file
+
+<img width="514" alt="image" src="https://user-images.githubusercontent.com/94127890/167810248-2ccc17b0-ac74-4ef2-a5ee-1ad91f358891.png">
+
 ## To do
 
 * [x] Make a functional simulator
