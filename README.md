@@ -16,17 +16,13 @@ A simulator simulating how a could work, how much time the total what would be
 
 ## Installation
 
-* clone the reposition: git clone "https://github.com/Pontus1337/quesimulator"
+* clone the reposition: git clone [Github](https://github.com/Pontus1337/quesimulator)
 
-* Make python installation "https://www.python.org/downloads/" and follow the steps on the website
+* Make python installation [Python](https://www.python.org/downloads/) and follow the steps on the website
 
 ## Code convention
 
-* CamelCase (classes)
-
-* SnakeCase
-
-* Pep8
+* PEP8
 
 ## Usage
 
@@ -54,7 +50,7 @@ No contribrutions allowed
 
 ## Licence
 
-MIT
+[MIT](https://choosealicense.com/licenses/mit/)
 
 ## Contact
 
@@ -82,10 +78,6 @@ MIT
 * Calculate statistics
 * Count total wait time for custumers
 * Function for helping people in the queue
-
-#### Removed
-
-* nothing
 
 #### Changed
 
