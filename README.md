@@ -12,7 +12,7 @@ A simulator simulating how a could work, how much time the total what would be
 
 ## Requirments
 
-    Python 3.7+
+* Python 3.7+
 
 ## Installation
 
