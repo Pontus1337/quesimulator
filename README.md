@@ -50,7 +50,7 @@ Press run and the program while run, then it will type the statisitcs in the con
 
 ## Contribrution
 
-    No contribrutions allowed
+No contribrutions allowed
 
 ## Licence
 
