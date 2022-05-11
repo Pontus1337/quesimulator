@@ -29,7 +29,7 @@ class Store:
         Args:
             n (Int): n is a variabel for the amount of people who have came into the queue
         """
-        self.line.append(Person(f"Person {n}",Task(),0))
+        self.line.append(Person(f"Person {n}",Task()))
         if self.minute<10 and self.hour<10:
             print(f"{self.line[-1].name} arrived at the time 0{self.hour}:0{self.minute} with {self.line[-1].tasks} tasks in place {len(self.line)}\n")
         elif self.hour<10: 
