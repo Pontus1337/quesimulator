@@ -16,20 +16,20 @@ class Store:
         self.line=line
         self.help=help
 
-    def New_Time(self):
+    def new_time(self):
         self.minute+=1
         if self.minute==60:
             self.hour+=1
             self.minute=0      
 
 
-    def Add_To_Line(self,n,):
+    def add_to_line(self,n,):
         """ Adds a person to the queue, will also write when said person came into the queue
 
         Args:
             n (Int): n is a variabel for the amount of people who have came into the queue
         """
-        self.line.append(Person(f"Person {n}",Task()))
+        self.line.append(Person(f"Person {n}",task()))
         if self.minute<10 and self.hour<10:
             print(f"{self.line[-1].name} arrived at the time 0{self.hour}:0{self.minute} with {self.line[-1].tasks} tasks in place {len(self.line)}\n")
         elif self.hour<10: 
@@ -40,7 +40,7 @@ class Store:
                 print(f"{self.line[-1].name} arrived at the time {self.hour}:{self.minute} with {self.line[-1].tasks} tasks in place {len(self.line)}\n")
 
 
-    def thequeue(self):
+    def the_queue(self):
         """ This function works as the queue and will check how many tasks the person 
         getting help needs help with and remove 0.5 tasks per time the function is called
         if said task goes down to 0 it will be removed from the queue
@@ -75,11 +75,11 @@ class Person:
         self.name=name
         self.tasks=tasks
 
-def Task():
+def task():
     task=[3,3,2,2,2,2,1,1,1,1,1,1,1,1]
     return choice(task)
 
-def Save(q):
+def save(q):
     """ Saves the string in the text file called "stats.txt"
 
     Args:
@@ -109,18 +109,18 @@ def main():
     store1=Store(9,0,[],False)
 
     while store1.hour<18 or len(store1.line)>0:
-        store1.New_Time()
+        store1.new_time()
 
         if randint(0,100)<=20 and not store1.hour>=18:
             person+=1
-            store1.Add_To_Line(person)
+            store1.add_to_line(person)
 
-        store1.thequeue()
+        store1.the_queue()
         if store1.help==True:
             waiting+=len(store1.line)-1
                 
     print (stat(waiting,person))
-    Save(stat(waiting,person))
+    save(stat(waiting,person))
 
 
 if __name__=="__main__":

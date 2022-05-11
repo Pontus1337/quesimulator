@@ -6,9 +6,9 @@ A simulator simulating how a could work, how much time the total what would be
 
 ## Technology/languages
 
-    Python
+* Python
 
-    Random library
+* Random library
 
 ## Requirments
 
@@ -22,15 +22,15 @@ A simulator simulating how a could work, how much time the total what would be
 
 ## Code convention
 
-    CamelCase (classes)
+* CamelCase (classes)
 
-    SnakeCase
+* SnakeCase
 
-    Pep8
+* Pep8
 
 ## Usage
 
-    Press run and the program while run, then it will type the statisitcs in the console aswell as the file called stats.txt in the same folder as the python file.
+Press run and the program while run, then it will type the statisitcs in the console aswell as the file called stats.txt in the same folder as the python file.
 
 ## Example
 
@@ -45,8 +45,8 @@ A simulator simulating how a could work, how much time the total what would be
 ## To do
 
 * [x] Make a functional simulator
-* [] Graphical user interface
-* [] Mechanics where the store gets robbed
+* [ ] Graphical user interface
+* [ ] Mechanics where the store gets robbed
 
 ## Contribrution
 
@@ -57,6 +57,8 @@ A simulator simulating how a could work, how much time the total what would be
 MIT
 
 ## Contact
+
+* Pontus.Lindh@elev.ga.ntig.se
 
 ## Changelogg
 
